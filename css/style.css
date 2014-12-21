@@ -1,0 +1,100 @@
+/*general page styles*/
+
+body {
+	text-align: center;
+	font-family: monospace;
+	background-color: #D2D7D3;
+}
+
+h1 {
+	margin: 100px 0 25px 0;
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+#colorSelect {
+	background: #ECF0F1;
+	border-radius: 5px;
+	clear: both;
+	margin: 20px auto 0;
+	padding: 10px;
+	width: 500px;
+	position: relative;
+}
+
+#newColor {
+	width: 200px;
+	height: 200px;
+	border-radius: 3px;
+	box-shadow: none;
+	float: left;
+	border: none;
+	margin: 10px 20px 20px 10px;
+
+}
+
+#colorMessage {
+	border-radius: 3px;
+	margin: 25px 0 0 10px;
+	text-align: center;
+	content: #000;
+	font-size: 25px;
+}
+
+.sliders p {
+	margin: 15px 0;
+	vertical-align: middle;
+
+}
+
+.sliders label {
+	display: inline-block;
+	margin: 15px 10px 15px 0;
+	width: 35px;
+	font-size: 20px;
+	color: #22313F;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.sliders input {
+	position: relative;
+	margin: 15px 10px 15px 20px;
+	vertical-align: middle;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
+    border-radius: 5px;
+    
+    /*required for proper track sizing in FF*/
+    width: 150px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 7px;
+    background: #ABB7B7;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #4B77BE;
+    margin-top: -6px;
+    vertical-align: middle;
+}
+input[type=range]:focus {
+    outline: none;
+}
