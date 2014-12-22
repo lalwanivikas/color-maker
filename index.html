@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Color Maker.</title>
+	<title>Color Maker | Vikas Lalwani</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 
@@ -34,7 +34,22 @@
 	</div>
 
 	<div id="colorMessage">
-		<p id="fixedMessage">The color you have selected has rgb value:</p>
+		<p id="fixedMessage">The color you have selected has following codes:</p>
+		
+		<div class="colorCodes">
+			<p>RGB:</p>
+			<p id="rgbCode">0, 0, 0</p>
+		</div>
+		
+		<div class="colorCodes">
+			<p>HEX:</p>
+			<p id="hexCode">000</p>
+		</div>
+
+		<div class="colorCodes">
+			<p>HSL:</p>
+			<p id="hslCode">0, 0, 0</p>
+		</div>
 	</div>
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
