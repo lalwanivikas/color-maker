@@ -7,9 +7,9 @@ function changeColor(){
   var b = $("#blue").val();
 
   // conversion to hex codes
-  var rHex = parseInt(r, 10).toString(16);
-  var gHex = parseInt(g, 10).toString(16);
-  var bHex = parseInt(b, 10).toString(16);
+  var rHex = ("0" + parseInt(r, 10).toString(16)).slice(-2);
+  var gHex = ("0" + parseInt(g, 10).toString(16)).slice(-2);
+  var bHex = ("0" + parseInt(b, 10).toString(16)).slice(-2);
   
   $("#newColor").css("background-color", "rgb(" + r + "," + g +", " + b + ")");
 
